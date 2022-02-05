@@ -10,8 +10,6 @@ const ColorfulMessage = (props) => {
 
   return (
     <>
-      {/* <p style={contentStyle}>{props.children}</p>
-      <h3 style={contentStyle}>{props.message}</h3> */}
       <ul>
         <li style={contentStyle}>{children}</li>
         <li style={contentStyle}>{children}</li>

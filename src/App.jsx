@@ -1,33 +1,21 @@
 import React from "react";
 import ColorfulMessage from "./components/ColorfulMessage";
+import Keiji from "./components/Keiji";
 
 const App = () => {
-  const toshiaki = {
-    color: "blue",
-    fontSize: "30px"
-  };
-
-  const onClickButton = () => {
-    alert("押されました");
+  const com = {
+    color: "green",
+    border: "3px solid #999",
+    textShadow: "2px 2px 2px #999"
   };
   return (
     <>
-      <h1 style={toshiaki}>吹越俊明</h1>
+      <ColorfulMessage color="red">吹越俊明</ColorfulMessage>
 
-      <ColorfulMessage color="blue">
-        新しい書き方で青く書きました
-      </ColorfulMessage>
-      <ColorfulMessage color="red">
-        次の赤も新しい書き方でかきました
-      </ColorfulMessage>
-      <ColorfulMessage color="pink">
-        最後にピンクでかわいくかきました
-      </ColorfulMessage>
-      <ColorfulMessage color="yellow" fontSize="20px">
-        黄色で書いてます
-      </ColorfulMessage>
+      <p style={{ color: "purple", fontSize: "30px" }}>こんにちは</p>
 
-      <button onClick={onClickButton}>ボタン</button>
+      <p style={com}>これはコンポーネント内で読み込んでいます</p>
+      <Keiji textShadow="2px 2px 2px #987">吹越敬治です</Keiji>
     </>
   );
 };
