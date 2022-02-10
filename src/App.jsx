@@ -1,11 +1,17 @@
 import React from "react";
 import "./style.css";
-import { SevenTest } from "./components/SevenTest";
+import { ButtonTest } from "./components/ButtonTest";
+import { InputTodos } from "./components/InputTodos";
 
 export const App = () => {
   return (
     <>
-      <SevenTest color="red">七回目のテストです。</SevenTest>
+      <ButtonTest />
+      <InputTodos />
+      {/* <button onClick={getButton}>押してください</button>
+      
+      <input value={todotext} placeholder="TODO" onChange={aaa}/>
+      <button onClikc={action}>送信</button> */}
     </>
   );
 };
