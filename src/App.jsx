@@ -3,6 +3,7 @@ import React from "react";
 import ColorfullMessage from "./components/ColorfullMessage";
 import My from "./components/My";
 import Test from "./components/Test";
+import A from "./components/A";
 
 export const App = () => {
   const onClick = () => {
@@ -34,9 +35,27 @@ export const App = () => {
   const button = () => {
     alert("ボタンが押されました");
   };
+  const goSite = () => {
+    alert("ゴーサイト");
+  };
+
+  const test = () => {
+    alert("こんにちは");
+  };
+  const oooo = () => {
+    alert("出来ましたか？");
+  };
 
   return (
     <>
+      <button onClick={oooo}>
+        さようなら、こんにちは、こんばんわ、ごきげんよう
+      </button>
+      <button onClick={goSite}>送信</button>
+      <button onClick={test}>こんにちは</button>
+      <A color="#955" fontSize="30px">
+        本日の行動はどこに行こうかな
+      </A>
       <Test color="blue" font="40px" border="3px dotted #498">
         明日は光ヶ丘
       </Test>
